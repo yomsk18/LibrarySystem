@@ -76,6 +76,8 @@
     <Compile Include="C_Admin.vb" />
     <Compile Include="C_Barrower.vb" />
     <Compile Include="C_Book.vb" />
+    <Compile Include="C_Fines.vb" />
+    <Compile Include="C_Transaction.vb" />
     <Compile Include="C_User.vb" />
     <Compile Include="Landing.vb">
       <SubType>Form</SubType>
@@ -84,6 +86,7 @@
       <DependentUpon>Landing.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LibraryDB.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -98,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="VergelControls\VMButton.vb">
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
