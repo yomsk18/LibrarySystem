@@ -3,7 +3,7 @@ Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.ComponentModel
 
-Namespace CustomControls.VMControls
+Namespace VergelControls.VMControls
     Public Class VMToggleButton
         Inherits CheckBox
 

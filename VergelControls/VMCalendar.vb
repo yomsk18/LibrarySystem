@@ -2,7 +2,7 @@
 Imports System.Drawing
 Imports System.Drawing.Drawing2D
 
-Namespace CustomControls.VMControls
+Namespace VergelControls.VMControls
     Public Class VMCalendar
         Inherits DateTimePicker
 
