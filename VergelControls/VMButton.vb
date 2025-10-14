@@ -3,7 +3,7 @@ Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.ComponentModel
 
-Namespace CustomControls.RJControls
+Namespace CustomControls.VMControls
     Public Class VMButton
         Inherits Button
 

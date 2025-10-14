@@ -105,6 +105,21 @@
     <Compile Include="VergelControls\VMButton.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="VergelControls\VMCalendar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VergelControls\VMRadioButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VergelControls\VMTextBox.Designer.vb">
+      <DependentUpon>VMTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VergelControls\VMTextBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VergelControls\VMToggleButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Landing.resx">
@@ -115,6 +130,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VergelControls\VMTextBox.resx">
+      <DependentUpon>VMTextBox.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
