@@ -1,7 +1,7 @@
 ﻿Imports System.Windows.Forms
 Imports System.Drawing
 
-Partial Public Class VMTextBox
+Partial Public Class RJTextBox
     Inherits UserControl
 
     'Required designer variable.
@@ -32,21 +32,21 @@ Partial Public Class VMTextBox
         '
         Me.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.textBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.textBox1.Location = New System.Drawing.Point(7, 7)
+        Me.textBox1.Location = New System.Drawing.Point(10, 7)
         Me.textBox1.Name = "textBox1"
-        Me.textBox1.Size = New System.Drawing.Size(236, 15)
+        Me.textBox1.Size = New System.Drawing.Size(230, 15)
         Me.textBox1.TabIndex = 0
         '
-        'VMTextBox
+        'RJTextBox
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.Controls.Add(Me.textBox1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.DimGray
+        Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "VMTextBox"
-        Me.Padding = New System.Windows.Forms.Padding(7)
+        Me.Name = "RJTextBox"
+        Me.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
         Me.Size = New System.Drawing.Size(250, 30)
         Me.ResumeLayout(False)
         Me.PerformLayout()

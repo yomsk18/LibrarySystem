@@ -1,9 +1,11 @@
 ﻿Public Class Landing
-    Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
-        MessageBox.Show("VMButton clicked!")
+    Private Sub Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim iconPath As String = IO.Path.Combine(Application.StartupPath, "Assets", "icons", "library.png")
     End Sub
 
-    Private Sub Landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub btnLibrarian_Click(sender As Object, e As EventArgs) Handles btnLibrarian.Click
+        Dim loginForm As New FrmLibrarianLogin()
+        loginForm.Show()
+        Me.Hide()
     End Sub
 End Class

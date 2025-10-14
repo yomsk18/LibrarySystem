@@ -22,99 +22,103 @@ Partial Class Landing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnLibrarian = New LibrarySystem.VergelControls.VMControls.VMButton()
         Me.VmButton1 = New LibrarySystem.VergelControls.VMControls.VMButton()
-        Me.VmToggleButton1 = New LibrarySystem.VergelControls.VMControls.VMToggleButton()
-        Me.VmTextBox1 = New LibrarySystem.VMTextBox()
-        Me.VmTextBox2 = New LibrarySystem.VMTextBox()
         Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.library
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Location = New System.Drawing.Point(673, 99)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(492, 404)
+        Me.Panel1.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(115, 99)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(494, 45)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "WELCOME TO LIBRARY LEDGER"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(107, 160)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(520, 60)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Press the key corresponding to your current position" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " and continue"
+        '
+        'btnLibrarian
+        '
+        Me.btnLibrarian.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnLibrarian.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnLibrarian.BorderColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.btnLibrarian.BorderRadius = 30
+        Me.btnLibrarian.BorderSize = 0
+        Me.btnLibrarian.FlatAppearance.BorderSize = 0
+        Me.btnLibrarian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLibrarian.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLibrarian.ForeColor = System.Drawing.Color.White
+        Me.btnLibrarian.Location = New System.Drawing.Point(174, 299)
+        Me.btnLibrarian.Name = "btnLibrarian"
+        Me.btnLibrarian.Size = New System.Drawing.Size(323, 61)
+        Me.btnLibrarian.TabIndex = 3
+        Me.btnLibrarian.Text = "LIBRARIAN"
+        Me.btnLibrarian.TextColor = System.Drawing.Color.White
+        Me.btnLibrarian.UseVisualStyleBackColor = False
         '
         'VmButton1
         '
-        Me.VmButton1.BackColor = System.Drawing.Color.SlateBlue
-        Me.VmButton1.BackgroundColor = System.Drawing.Color.SlateBlue
-        Me.VmButton1.BorderColor = System.Drawing.Color.PaleVioletRed
-        Me.VmButton1.BorderRadius = 25
+        Me.VmButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.VmButton1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.VmButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.VmButton1.BorderRadius = 30
         Me.VmButton1.BorderSize = 0
         Me.VmButton1.FlatAppearance.BorderSize = 0
         Me.VmButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.VmButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VmButton1.ForeColor = System.Drawing.Color.White
-        Me.VmButton1.Location = New System.Drawing.Point(134, 33)
+        Me.VmButton1.Location = New System.Drawing.Point(174, 381)
         Me.VmButton1.Name = "VmButton1"
-        Me.VmButton1.Size = New System.Drawing.Size(294, 154)
-        Me.VmButton1.TabIndex = 0
-        Me.VmButton1.Text = "VmButton1"
+        Me.VmButton1.Size = New System.Drawing.Size(323, 61)
+        Me.VmButton1.TabIndex = 4
+        Me.VmButton1.Text = "STUDENTS"
         Me.VmButton1.TextColor = System.Drawing.Color.White
         Me.VmButton1.UseVisualStyleBackColor = False
-        '
-        'VmToggleButton1
-        '
-        Me.VmToggleButton1.Location = New System.Drawing.Point(482, 118)
-        Me.VmToggleButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.VmToggleButton1.MinimumSize = New System.Drawing.Size(34, 18)
-        Me.VmToggleButton1.Name = "VmToggleButton1"
-        Me.VmToggleButton1.OffBackColor = System.Drawing.Color.Gray
-        Me.VmToggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro
-        Me.VmToggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue
-        Me.VmToggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke
-        Me.VmToggleButton1.Size = New System.Drawing.Size(158, 69)
-        Me.VmToggleButton1.TabIndex = 1
-        Me.VmToggleButton1.UseVisualStyleBackColor = True
-        '
-        'VmTextBox1
-        '
-        Me.VmTextBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.VmTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue
-        Me.VmTextBox1.BorderFocusColor = System.Drawing.Color.HotPink
-        Me.VmTextBox1.BorderSize = 1
-        Me.VmTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VmTextBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.VmTextBox1.Location = New System.Drawing.Point(292, 273)
-        Me.VmTextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.VmTextBox1.Multiline = False
-        Me.VmTextBox1.Name = "VmTextBox1"
-        Me.VmTextBox1.Padding = New System.Windows.Forms.Padding(7)
-        Me.VmTextBox1.PasswordChar = False
-        Me.VmTextBox1.Size = New System.Drawing.Size(250, 31)
-        Me.VmTextBox1.TabIndex = 2
-        Me.VmTextBox1.Texts = ""
-        Me.VmTextBox1.UnderlinedStyle = False
-        '
-        'VmTextBox2
-        '
-        Me.VmTextBox2.BackColor = System.Drawing.SystemColors.Window
-        Me.VmTextBox2.BorderColor = System.Drawing.Color.MediumSlateBlue
-        Me.VmTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.VmTextBox2.BorderSize = 1
-        Me.VmTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VmTextBox2.ForeColor = System.Drawing.Color.DimGray
-        Me.VmTextBox2.Location = New System.Drawing.Point(292, 323)
-        Me.VmTextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.VmTextBox2.Multiline = False
-        Me.VmTextBox2.Name = "VmTextBox2"
-        Me.VmTextBox2.Padding = New System.Windows.Forms.Padding(7)
-        Me.VmTextBox2.PasswordChar = False
-        Me.VmTextBox2.Size = New System.Drawing.Size(250, 31)
-        Me.VmTextBox2.TabIndex = 3
-        Me.VmTextBox2.Texts = ""
-        Me.VmTextBox2.UnderlinedStyle = False
         '
         'Landing
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.VmTextBox2)
-        Me.Controls.Add(Me.VmTextBox1)
-        Me.Controls.Add(Me.VmToggleButton1)
+        Me.ClientSize = New System.Drawing.Size(1234, 611)
         Me.Controls.Add(Me.VmButton1)
+        Me.Controls.Add(Me.btnLibrarian)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.MaximumSize = New System.Drawing.Size(1600, 900)
+        Me.MinimumSize = New System.Drawing.Size(1024, 600)
         Me.Name = "Landing"
         Me.Text = "Landing"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents VmButton1 As LibrarySystem.VergelControls.VMControls.VMButton
-    Friend WithEvents VmToggleButton1 As LibrarySystem.VergelControls.VMControls.VMToggleButton
-    Friend WithEvents VmTextBox1 As VMTextBox
-    Friend WithEvents VmTextBox2 As VMTextBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnLibrarian As VergelControls.VMControls.VMButton
+    Friend WithEvents VmButton1 As VergelControls.VMControls.VMButton
 End Class

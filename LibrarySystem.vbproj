@@ -79,6 +79,12 @@
     <Compile Include="C_Fines.vb" />
     <Compile Include="C_Transaction.vb" />
     <Compile Include="C_User.vb" />
+    <Compile Include="FrmLibrarianLogin.Designer.vb">
+      <DependentUpon>FrmLibrarianLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLibrarianLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Landing.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     <Compile Include="VergelControls\VMCalendar.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="VergelControls\VMComboBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="VergelControls\VMRadioButton.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -122,6 +131,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmLibrarianLogin.resx">
+      <DependentUpon>FrmLibrarianLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Landing.resx">
       <DependentUpon>Landing.vb</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +158,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Icons\library.png" />
+    <Content Include="Assets\Icons\login.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
