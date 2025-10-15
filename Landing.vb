@@ -8,4 +8,10 @@
         loginForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
+        Dim loginForm As New FrmStudentLogin()
+        loginForm.Show()
+        Me.Hide()
+    End Sub
 End Class

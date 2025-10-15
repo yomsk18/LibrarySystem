@@ -79,10 +79,20 @@
     <Compile Include="C_Fines.vb" />
     <Compile Include="C_Transaction.vb" />
     <Compile Include="C_User.vb" />
+    <Compile Include="FormMessageBox.Designer.vb" />
+    <Compile Include="FormMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmLibrarianLogin.Designer.vb">
       <DependentUpon>FrmLibrarianLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmLibrarianLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentLogin.Designer.vb">
+      <DependentUpon>FrmStudentLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Landing.vb">
@@ -108,6 +118,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RJMessageBox.vb" />
     <Compile Include="VergelControls\VMButton.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -131,8 +142,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormMessageBox.resx" />
     <EmbeddedResource Include="FrmLibrarianLogin.resx">
       <DependentUpon>FrmLibrarianLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentLogin.resx">
+      <DependentUpon>FrmStudentLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Landing.resx">
       <DependentUpon>Landing.vb</DependentUpon>
@@ -148,6 +163,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Icons\login.webp" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -160,8 +176,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Icons\Capture.PNG" />
+    <Content Include="Assets\Icons\chat.png" />
+    <Content Include="Assets\Icons\Circle.png" />
+    <Content Include="Assets\Icons\error.png" />
+    <Content Include="Assets\Icons\exclamation.png" />
+    <Content Include="Assets\Icons\information.png" />
     <Content Include="Assets\Icons\library.png" />
     <Content Include="Assets\Icons\login.jpg" />
+    <Content Include="Assets\Icons\login1.jpg" />
+    <Content Include="Assets\Icons\logo.png" />
+    <Content Include="Assets\Icons\profile.png" />
+    <Content Include="Assets\Icons\question.png" />
+    <None Include="Resources\error.bmp" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

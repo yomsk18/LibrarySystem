@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Imports System.Drawing.Design
 
 <DefaultEvent("OnSelectedIndexChanged")>
-Public Class RJComboBox
+Public Class VMComboBox
     Inherits UserControl
 
 #Region "-> Fields"

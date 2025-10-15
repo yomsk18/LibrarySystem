@@ -22,21 +22,12 @@ Partial Class Landing
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnLibrarian = New LibrarySystem.VergelControls.VMControls.VMButton()
         Me.VmButton1 = New LibrarySystem.VergelControls.VMControls.VMButton()
+        Me.btnLibrarian = New LibrarySystem.VergelControls.VMControls.VMButton()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.library
-        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Location = New System.Drawing.Point(673, 99)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(492, 404)
-        Me.Panel1.TabIndex = 0
         '
         'Label1
         '
@@ -58,6 +49,25 @@ Partial Class Landing
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Press the key corresponding to your current position" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " and continue"
         '
+        'VmButton1
+        '
+        Me.VmButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.VmButton1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.VmButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.VmButton1.BorderRadius = 30
+        Me.VmButton1.BorderSize = 0
+        Me.VmButton1.FlatAppearance.BorderSize = 0
+        Me.VmButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.VmButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VmButton1.ForeColor = System.Drawing.Color.White
+        Me.VmButton1.Location = New System.Drawing.Point(174, 381)
+        Me.VmButton1.Name = "VmButton1"
+        Me.VmButton1.Size = New System.Drawing.Size(323, 61)
+        Me.VmButton1.TabIndex = 4
+        Me.VmButton1.Text = "STUDENTS"
+        Me.VmButton1.TextColor = System.Drawing.Color.White
+        Me.VmButton1.UseVisualStyleBackColor = False
+        '
         'btnLibrarian
         '
         Me.btnLibrarian.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
@@ -77,24 +87,14 @@ Partial Class Landing
         Me.btnLibrarian.TextColor = System.Drawing.Color.White
         Me.btnLibrarian.UseVisualStyleBackColor = False
         '
-        'VmButton1
+        'Panel1
         '
-        Me.VmButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.VmButton1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.VmButton1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.VmButton1.BorderRadius = 30
-        Me.VmButton1.BorderSize = 0
-        Me.VmButton1.FlatAppearance.BorderSize = 0
-        Me.VmButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.VmButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VmButton1.ForeColor = System.Drawing.Color.White
-        Me.VmButton1.Location = New System.Drawing.Point(174, 381)
-        Me.VmButton1.Name = "VmButton1"
-        Me.VmButton1.Size = New System.Drawing.Size(323, 61)
-        Me.VmButton1.TabIndex = 4
-        Me.VmButton1.Text = "STUDENTS"
-        Me.VmButton1.TextColor = System.Drawing.Color.White
-        Me.VmButton1.UseVisualStyleBackColor = False
+        Me.Panel1.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.library
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Location = New System.Drawing.Point(673, 99)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(492, 404)
+        Me.Panel1.TabIndex = 0
         '
         'Landing
         '
