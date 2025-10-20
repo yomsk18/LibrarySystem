@@ -1,7 +1,9 @@
 ﻿Public Class FrmLibrarianLogin
     Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
-        Dim landingForm As New Landing()
-        landingForm.Show()
-        Me.Hide()
+        SwitchForm(Me, New Landing())
+    End Sub
+
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+
     End Sub
 End Class

@@ -1,8 +1,6 @@
 ﻿Public Class FrmStudentLogin
     Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
-        Dim landingForm As New Landing()
-        landingForm.Show()
-        Me.Hide()
+        SwitchForm(Me, New Landing())
     End Sub
 
     Private Sub lblForgetPass_MouseHover(sender As Object, e As EventArgs) Handles lblForgetPass.MouseHover
@@ -16,5 +14,9 @@
 
     Private Sub lblForgetPass_Click(sender As Object, e As EventArgs) Handles lblForgetPass.Click
         RJMessageBox.Show("Please contact the librarian to reset your password. Bring reg form and ID", "Forgot Password", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        SwitchForm(Me, New FrmStudent())
     End Sub
 End Class

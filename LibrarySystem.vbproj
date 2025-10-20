@@ -73,36 +73,43 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C_Admin.vb" />
-    <Compile Include="C_Barrower.vb" />
-    <Compile Include="C_Book.vb" />
-    <Compile Include="C_Fines.vb" />
-    <Compile Include="C_Transaction.vb" />
-    <Compile Include="C_User.vb" />
-    <Compile Include="FormMessageBox.Designer.vb" />
-    <Compile Include="FormMessageBox.vb">
+    <Compile Include="Classes\C_Admin.vb" />
+    <Compile Include="Classes\C_Barrower.vb" />
+    <Compile Include="Classes\C_Book.vb" />
+    <Compile Include="Classes\C_Fines.vb" />
+    <Compile Include="Classes\C_Transaction.vb" />
+    <Compile Include="Classes\C_User.vb" />
+    <Compile Include="FrmStudent.Designer.vb">
+      <DependentUpon>FrmStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudent.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLibrarianLogin.Designer.vb">
+    <Compile Include="Modules\FormHelper.vb" />
+    <Compile Include="Forms\FormMessageBox.Designer.vb" />
+    <Compile Include="Forms\FormMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLibrarianLogin.Designer.vb">
       <DependentUpon>FrmLibrarianLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmLibrarianLogin.vb">
+    <Compile Include="Forms\FrmLibrarianLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmStudentLogin.Designer.vb">
+    <Compile Include="Forms\FrmStudentLogin.Designer.vb">
       <DependentUpon>FrmStudentLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmStudentLogin.vb">
+    <Compile Include="Forms\FrmStudentLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Landing.vb">
+    <Compile Include="Forms\Landing.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Landing.Designer.vb">
+    <Compile Include="Forms\Landing.Designer.vb">
       <DependentUpon>Landing.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LibraryDB.vb" />
+    <Compile Include="Database\LibraryDB.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -118,7 +125,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="RJMessageBox.vb" />
+    <Compile Include="Classes\RJMessageBox.vb" />
     <Compile Include="VergelControls\VMButton.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -140,17 +147,23 @@
     <Compile Include="VergelControls\VMToggleButton.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="VergelControls\VMPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormMessageBox.resx" />
-    <EmbeddedResource Include="FrmLibrarianLogin.resx">
+    <EmbeddedResource Include="Forms\FormMessageBox.resx" />
+    <EmbeddedResource Include="Forms\FrmLibrarianLogin.resx">
       <DependentUpon>FrmLibrarianLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStudentLogin.resx">
+    <EmbeddedResource Include="Forms\FrmStudentLogin.resx">
       <DependentUpon>FrmStudentLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Landing.resx">
+    <EmbeddedResource Include="Forms\Landing.resx">
       <DependentUpon>Landing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudent.resx">
+      <DependentUpon>FrmStudent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
