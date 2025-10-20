@@ -4,15 +4,11 @@
     End Sub
 
     Private Sub btnLibrarian_Click(sender As Object, e As EventArgs) Handles btnLibrarian.Click
-        Dim loginForm As New FrmLibrarianLogin()
-        loginForm.Show()
-        Me.Hide()
+        SwitchForm(Me, New FrmLibrarianLogin())
     End Sub
 
     Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
-        Dim loginForm As New FrmStudentLogin()
-        loginForm.Show()
-        Me.Hide()
+        SwitchForm(Me, New FrmStudentLogin())
     End Sub
 
     Private Sub VmButton2_Click(sender As Object, e As EventArgs)

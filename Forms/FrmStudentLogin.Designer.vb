@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmLibrarianLogin
+Partial Class FrmStudentLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,117 +22,41 @@ Partial Class FrmLibrarianLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.pnlIcon = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.linklblSignUp = New System.Windows.Forms.LinkLabel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.pnlForgetPass = New System.Windows.Forms.Panel()
+        Me.lblForgetPass = New System.Windows.Forms.Label()
         Me.VmButton1 = New LibrarySystem.VergelControls.VMControls.VMButton()
         Me.btnLogin = New LibrarySystem.VergelControls.VMControls.VMButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnPassword = New LibrarySystem.RJTextBox()
         Me.btnUserId = New LibrarySystem.RJTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.pnlIcon = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel3.SuspendLayout()
+        Me.pnlForgetPass.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlIcon.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.pnlIcon)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1218, 118)
-        Me.Panel1.TabIndex = 0
-        '
-        'pnlIcon
-        '
-        Me.pnlIcon.Controls.Add(Me.PictureBox1)
-        Me.pnlIcon.Location = New System.Drawing.Point(736, -25)
-        Me.pnlIcon.Name = "pnlIcon"
-        Me.pnlIcon.Size = New System.Drawing.Size(438, 339)
-        Me.pnlIcon.TabIndex = 0
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.Circle
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(438, 339)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Panel2.Controls.Add(Me.Panel5)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Controls.Add(Me.Panel4)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(669, 600)
-        Me.Panel2.TabIndex = 1
-        '
-        'Panel5
-        '
-        Me.Panel5.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.Capture
-        Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 447)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(669, 153)
-        Me.Panel5.TabIndex = 3
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.RosyBrown
-        Me.Label4.Location = New System.Drawing.Point(196, 414)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(285, 30)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "BOOK BARROWING SYSTEM"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(206, 374)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(250, 40)
-        Me.Label3.TabIndex = 1
-        Me.Label3.Text = "LIBRARY LEDGER"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.logo
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel4.Location = New System.Drawing.Point(217, 144)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(228, 218)
-        Me.Panel4.TabIndex = 0
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.linklblSignUp)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.pnlForgetPass)
         Me.Panel3.Controls.Add(Me.VmButton1)
         Me.Panel3.Controls.Add(Me.btnLogin)
         Me.Panel3.Controls.Add(Me.Label2)
@@ -140,10 +64,52 @@ Partial Class FrmLibrarianLogin
         Me.Panel3.Controls.Add(Me.btnUserId)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(669, 0)
+        Me.Panel3.Location = New System.Drawing.Point(685, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(549, 600)
-        Me.Panel3.TabIndex = 2
+        Me.Panel3.Size = New System.Drawing.Size(549, 611)
+        Me.Panel3.TabIndex = 6
+        '
+        'linklblSignUp
+        '
+        Me.linklblSignUp.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.linklblSignUp.AutoSize = True
+        Me.linklblSignUp.Font = New System.Drawing.Font("Segoe UI Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.linklblSignUp.LinkColor = System.Drawing.Color.Blue
+        Me.linklblSignUp.Location = New System.Drawing.Point(344, 446)
+        Me.linklblSignUp.Name = "linklblSignUp"
+        Me.linklblSignUp.Size = New System.Drawing.Size(54, 15)
+        Me.linklblSignUp.TabIndex = 9
+        Me.linklblSignUp.TabStop = True
+        Me.linklblSignUp.Text = "Sign Up"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(192, 443)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(155, 20)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Do you have account?"
+        '
+        'pnlForgetPass
+        '
+        Me.pnlForgetPass.AutoSize = True
+        Me.pnlForgetPass.Controls.Add(Me.lblForgetPass)
+        Me.pnlForgetPass.Location = New System.Drawing.Point(299, 369)
+        Me.pnlForgetPass.Name = "pnlForgetPass"
+        Me.pnlForgetPass.Size = New System.Drawing.Size(127, 21)
+        Me.pnlForgetPass.TabIndex = 7
+        '
+        'lblForgetPass
+        '
+        Me.lblForgetPass.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblForgetPass.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblForgetPass.Location = New System.Drawing.Point(0, 0)
+        Me.lblForgetPass.Name = "lblForgetPass"
+        Me.lblForgetPass.Size = New System.Drawing.Size(127, 21)
+        Me.lblForgetPass.TabIndex = 0
+        Me.lblForgetPass.Text = "Forget Password?"
         '
         'VmButton1
         '
@@ -175,9 +141,9 @@ Partial Class FrmLibrarianLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(151, 396)
+        Me.btnLogin.Location = New System.Drawing.Point(125, 396)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(250, 44)
+        Me.btnLogin.Size = New System.Drawing.Size(301, 44)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "LOGIN"
         Me.btnLogin.TextColor = System.Drawing.Color.White
@@ -188,11 +154,11 @@ Partial Class FrmLibrarianLogin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(212, 162)
+        Me.Label2.Location = New System.Drawing.Point(200, 162)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(118, 30)
+        Me.Label2.Size = New System.Drawing.Size(105, 30)
         Me.Label2.TabIndex = 3
-        Me.Label2.Text = "LIBRARIAN"
+        Me.Label2.Text = "STUDENT"
         '
         'btnPassword
         '
@@ -200,10 +166,10 @@ Partial Class FrmLibrarianLogin
         Me.btnPassword.BorderColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.btnPassword.BorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnPassword.BorderRadius = 20
-        Me.btnPassword.BorderSize = 1
+        Me.btnPassword.BorderSize = 2
         Me.btnPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnPassword.Location = New System.Drawing.Point(151, 322)
+        Me.btnPassword.Location = New System.Drawing.Point(125, 322)
         Me.btnPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.btnPassword.Multiline = False
         Me.btnPassword.Name = "btnPassword"
@@ -211,7 +177,7 @@ Partial Class FrmLibrarianLogin
         Me.btnPassword.PasswordChar = False
         Me.btnPassword.PlaceholderColor = System.Drawing.Color.DimGray
         Me.btnPassword.PlaceholderText = "PASSWORD"
-        Me.btnPassword.Size = New System.Drawing.Size(250, 40)
+        Me.btnPassword.Size = New System.Drawing.Size(301, 40)
         Me.btnPassword.TabIndex = 2
         Me.btnPassword.Texts = ""
         Me.btnPassword.UnderlinedStyle = False
@@ -222,10 +188,10 @@ Partial Class FrmLibrarianLogin
         Me.btnUserId.BorderColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.btnUserId.BorderFocusColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnUserId.BorderRadius = 20
-        Me.btnUserId.BorderSize = 1
+        Me.btnUserId.BorderSize = 2
         Me.btnUserId.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUserId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnUserId.Location = New System.Drawing.Point(151, 274)
+        Me.btnUserId.Location = New System.Drawing.Point(125, 274)
         Me.btnUserId.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUserId.Multiline = False
         Me.btnUserId.Name = "btnUserId"
@@ -233,7 +199,7 @@ Partial Class FrmLibrarianLogin
         Me.btnUserId.PasswordChar = False
         Me.btnUserId.PlaceholderColor = System.Drawing.Color.DimGray
         Me.btnUserId.PlaceholderText = "USER ID"
-        Me.btnUserId.Size = New System.Drawing.Size(250, 40)
+        Me.btnUserId.Size = New System.Drawing.Size(301, 40)
         Me.btnUserId.TabIndex = 1
         Me.btnUserId.Texts = ""
         Me.btnUserId.UnderlinedStyle = False
@@ -249,6 +215,26 @@ Partial Class FrmLibrarianLogin
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Sign in to your account"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Panel6)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(685, 611)
+        Me.Panel2.TabIndex = 5
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.login1
+        Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(685, 611)
+        Me.Panel6.TabIndex = 4
+        '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
@@ -258,15 +244,78 @@ Partial Class FrmLibrarianLogin
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(81, 71)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
         '
-        'FrmLibrarianLogin
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(179, 23)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(250, 40)
+        Me.Label3.TabIndex = 1
+        Me.Label3.Text = "LIBRARY LEDGER"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.logo
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel4.Location = New System.Drawing.Point(12, 3)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(135, 104)
+        Me.Panel4.TabIndex = 0
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(169, 63)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(285, 30)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "BOOK BARROWING SYSTEM"
+        '
+        'pnlIcon
+        '
+        Me.pnlIcon.Controls.Add(Me.PictureBox1)
+        Me.pnlIcon.Location = New System.Drawing.Point(736, -25)
+        Me.pnlIcon.Name = "pnlIcon"
+        Me.pnlIcon.Size = New System.Drawing.Size(438, 339)
+        Me.pnlIcon.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.Circle
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(438, 339)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.pnlIcon)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.Panel4)
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1234, 118)
+        Me.Panel1.TabIndex = 4
+        '
+        'FrmStudentLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1218, 600)
+        Me.ClientSize = New System.Drawing.Size(1234, 611)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
@@ -274,34 +323,39 @@ Partial Class FrmLibrarianLogin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximumSize = New System.Drawing.Size(1600, 900)
         Me.MinimumSize = New System.Drawing.Size(1024, 600)
-        Me.Name = "FrmLibrarianLogin"
-        Me.Text = "FrmLibrarianLogin"
-        Me.Panel1.ResumeLayout(False)
-        Me.pnlIcon.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        Me.Name = "FrmStudentLogin"
+        Me.Text = "FrmStudentLogin"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        Me.pnlForgetPass.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlIcon.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents pnlIcon As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents btnUserId As RJTextBox
-    Friend WithEvents btnPassword As RJTextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents btnLogin As VergelControls.VMControls.VMButton
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Panel3 As Panel
     Friend WithEvents VmButton1 As VergelControls.VMControls.VMButton
+    Friend WithEvents btnLogin As VergelControls.VMControls.VMButton
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnPassword As RJTextBox
+    Friend WithEvents btnUserId As RJTextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents pnlForgetPass As Panel
+    Friend WithEvents lblForgetPass As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents linklblSignUp As LinkLabel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents pnlIcon As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel1 As Panel
 End Class
