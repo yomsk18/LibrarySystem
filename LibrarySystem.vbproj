@@ -85,6 +85,12 @@
     <Compile Include="FrmStudent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FrmStudentSignUp.Designer.vb">
+      <DependentUpon>FrmStudentSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmStudentSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modules\FormHelper.vb" />
     <Compile Include="Forms\FormMessageBox.Designer.vb" />
     <Compile Include="Forms\FormMessageBox.vb">
@@ -126,6 +132,24 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Classes\RJMessageBox.vb" />
+    <Compile Include="UserContols\uc_Account.Designer.vb">
+      <DependentUpon>uc_Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserContols\uc_Account.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContols\uc_Fines.Designer.vb">
+      <DependentUpon>uc_Fines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserContols\uc_Fines.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContols\uc_Library.Designer.vb">
+      <DependentUpon>uc_Library.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserContols\uc_Library.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserContols\uc_SearchBook.Designer.vb">
       <DependentUpon>uc_SearchBook.vb</DependentUpon>
     </Compile>
@@ -171,11 +195,23 @@
     <EmbeddedResource Include="FrmStudent.resx">
       <DependentUpon>FrmStudent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmStudentSignUp.resx">
+      <DependentUpon>FrmStudentSignUp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\uc_Account.resx">
+      <DependentUpon>uc_Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\uc_Fines.resx">
+      <DependentUpon>uc_Fines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\uc_Library.resx">
+      <DependentUpon>uc_Library.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserContols\uc_SearchBook.resx">
       <DependentUpon>uc_SearchBook.vb</DependentUpon>

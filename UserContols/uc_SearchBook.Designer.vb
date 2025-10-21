@@ -59,9 +59,10 @@ Partial Class uc_SearchBook
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(114, 49)
+        Me.Label4.Location = New System.Drawing.Point(152, 60)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(210, 20)
+        Me.Label4.Size = New System.Drawing.Size(264, 25)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "BOOK BARROWING SYSTEM"
         '
@@ -70,9 +71,10 @@ Partial Class uc_SearchBook
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(115, 17)
+        Me.Label3.Location = New System.Drawing.Point(153, 21)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(209, 32)
+        Me.Label3.Size = New System.Drawing.Size(259, 41)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "LIBRARY LEDGER"
         '
@@ -88,19 +90,21 @@ Partial Class uc_SearchBook
         Me.VMpanel1.GradientColor1 = System.Drawing.Color.Empty
         Me.VMpanel1.GradientColor2 = System.Drawing.Color.Empty
         Me.VMpanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.VMpanel1.Location = New System.Drawing.Point(46, 27)
+        Me.VMpanel1.Location = New System.Drawing.Point(61, 33)
+        Me.VMpanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VMpanel1.Name = "VMpanel1"
         Me.VMpanel1.Opacity = 100
-        Me.VMpanel1.Size = New System.Drawing.Size(838, 86)
+        Me.VMpanel1.Size = New System.Drawing.Size(1117, 106)
         Me.VMpanel1.TabIndex = 2
         '
         'Panel4
         '
         Me.Panel4.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.logo
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel4.Location = New System.Drawing.Point(14, 6)
+        Me.Panel4.Location = New System.Drawing.Point(19, 7)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(95, 72)
+        Me.Panel4.Size = New System.Drawing.Size(127, 89)
         Me.Panel4.TabIndex = 1
         '
         'VMpanel2
@@ -115,10 +119,11 @@ Partial Class uc_SearchBook
         Me.VMpanel2.GradientColor1 = System.Drawing.Color.Empty
         Me.VMpanel2.GradientColor2 = System.Drawing.Color.Empty
         Me.VMpanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.VMpanel2.Location = New System.Drawing.Point(46, 136)
+        Me.VMpanel2.Location = New System.Drawing.Point(61, 167)
+        Me.VMpanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VMpanel2.Name = "VMpanel2"
         Me.VMpanel2.Opacity = 100
-        Me.VMpanel2.Size = New System.Drawing.Size(838, 434)
+        Me.VMpanel2.Size = New System.Drawing.Size(1117, 534)
         Me.VMpanel2.TabIndex = 3
         '
         'dgvBooks
@@ -139,7 +144,8 @@ Partial Class uc_SearchBook
         Me.dgvBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBooks.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TITLE, Me.AUTHOR, Me.CATEGORY, Me.ISBN, Me.STOCKS})
         Me.dgvBooks.GridColor = System.Drawing.SystemColors.ActiveCaption
-        Me.dgvBooks.Location = New System.Drawing.Point(27, 144)
+        Me.dgvBooks.Location = New System.Drawing.Point(36, 177)
+        Me.dgvBooks.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgvBooks.MultiSelect = False
         Me.dgvBooks.Name = "dgvBooks"
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -150,33 +156,39 @@ Partial Class uc_SearchBook
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvBooks.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvBooks.RowHeadersWidth = 51
         Me.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvBooks.Size = New System.Drawing.Size(775, 262)
+        Me.dgvBooks.Size = New System.Drawing.Size(1033, 322)
         Me.dgvBooks.TabIndex = 2
         '
         'TITLE
         '
         Me.TITLE.HeaderText = "TITLE"
+        Me.TITLE.MinimumWidth = 6
         Me.TITLE.Name = "TITLE"
         '
         'AUTHOR
         '
         Me.AUTHOR.HeaderText = "AUTHOR"
+        Me.AUTHOR.MinimumWidth = 6
         Me.AUTHOR.Name = "AUTHOR"
         '
         'CATEGORY
         '
         Me.CATEGORY.HeaderText = "CATEGORY"
+        Me.CATEGORY.MinimumWidth = 6
         Me.CATEGORY.Name = "CATEGORY"
         '
         'ISBN
         '
         Me.ISBN.HeaderText = "ISBN"
+        Me.ISBN.MinimumWidth = 6
         Me.ISBN.Name = "ISBN"
         '
         'STOCKS
         '
         Me.STOCKS.HeaderText = "STOCKS"
+        Me.STOCKS.MinimumWidth = 6
         Me.STOCKS.Name = "STOCKS"
         '
         'pnlFilter
@@ -195,10 +207,11 @@ Partial Class uc_SearchBook
         Me.pnlFilter.GradientColor1 = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.pnlFilter.GradientColor2 = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.pnlFilter.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.pnlFilter.Location = New System.Drawing.Point(27, 42)
+        Me.pnlFilter.Location = New System.Drawing.Point(36, 52)
+        Me.pnlFilter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlFilter.Name = "pnlFilter"
         Me.pnlFilter.Opacity = 25
-        Me.pnlFilter.Size = New System.Drawing.Size(775, 87)
+        Me.pnlFilter.Size = New System.Drawing.Size(1033, 107)
         Me.pnlFilter.TabIndex = 1
         '
         'btnSubmit
@@ -212,9 +225,10 @@ Partial Class uc_SearchBook
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.ForeColor = System.Drawing.Color.BlanchedAlmond
-        Me.btnSubmit.Location = New System.Drawing.Point(661, 35)
+        Me.btnSubmit.Location = New System.Drawing.Point(881, 43)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(89, 31)
+        Me.btnSubmit.Size = New System.Drawing.Size(119, 38)
         Me.btnSubmit.TabIndex = 8
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.TextColor = System.Drawing.Color.BlanchedAlmond
@@ -229,15 +243,15 @@ Partial Class uc_SearchBook
         Me.txtAuthor.BorderSize = 2
         Me.txtAuthor.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAuthor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtAuthor.Location = New System.Drawing.Point(454, 35)
-        Me.txtAuthor.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtAuthor.Location = New System.Drawing.Point(605, 43)
+        Me.txtAuthor.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtAuthor.Multiline = False
         Me.txtAuthor.Name = "txtAuthor"
-        Me.txtAuthor.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
+        Me.txtAuthor.Padding = New System.Windows.Forms.Padding(13, 9, 13, 9)
         Me.txtAuthor.PasswordChar = False
         Me.txtAuthor.PlaceholderColor = System.Drawing.Color.DarkGray
         Me.txtAuthor.PlaceholderText = ""
-        Me.txtAuthor.Size = New System.Drawing.Size(165, 31)
+        Me.txtAuthor.Size = New System.Drawing.Size(220, 39)
         Me.txtAuthor.TabIndex = 7
         Me.txtAuthor.Texts = ""
         Me.txtAuthor.UnderlinedStyle = False
@@ -247,9 +261,10 @@ Partial Class uc_SearchBook
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(467, 12)
+        Me.Label6.Location = New System.Drawing.Point(623, 15)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(62, 20)
+        Me.Label6.Size = New System.Drawing.Size(78, 25)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Author:"
         '
@@ -263,10 +278,11 @@ Partial Class uc_SearchBook
         Me.VMpanel4.GradientColor1 = System.Drawing.Color.Empty
         Me.VMpanel4.GradientColor2 = System.Drawing.Color.Empty
         Me.VMpanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.VMpanel4.Location = New System.Drawing.Point(246, 35)
+        Me.VMpanel4.Location = New System.Drawing.Point(328, 43)
+        Me.VMpanel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VMpanel4.Name = "VMpanel4"
         Me.VMpanel4.Opacity = 100
-        Me.VMpanel4.Size = New System.Drawing.Size(176, 36)
+        Me.VMpanel4.Size = New System.Drawing.Size(235, 44)
         Me.VMpanel4.TabIndex = 5
         '
         'VmCalendar1
@@ -276,9 +292,10 @@ Partial Class uc_SearchBook
         Me.VmCalendar1.Dock = System.Windows.Forms.DockStyle.Left
         Me.VmCalendar1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VmCalendar1.Location = New System.Drawing.Point(0, 0)
+        Me.VmCalendar1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VmCalendar1.MinimumSize = New System.Drawing.Size(4, 35)
         Me.VmCalendar1.Name = "VmCalendar1"
-        Me.VmCalendar1.Size = New System.Drawing.Size(180, 35)
+        Me.VmCalendar1.Size = New System.Drawing.Size(239, 35)
         Me.VmCalendar1.SkinColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.VmCalendar1.TabIndex = 4
         Me.VmCalendar1.TextColor = System.Drawing.Color.Black
@@ -293,10 +310,11 @@ Partial Class uc_SearchBook
         Me.VMpanel3.GradientColor1 = System.Drawing.Color.Empty
         Me.VMpanel3.GradientColor2 = System.Drawing.Color.Empty
         Me.VMpanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical
-        Me.VMpanel3.Location = New System.Drawing.Point(27, 35)
+        Me.VMpanel3.Location = New System.Drawing.Point(36, 43)
+        Me.VMpanel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VMpanel3.Name = "VMpanel3"
         Me.VMpanel3.Opacity = 100
-        Me.VMpanel3.Size = New System.Drawing.Size(178, 36)
+        Me.VMpanel3.Size = New System.Drawing.Size(237, 44)
         Me.VMpanel3.TabIndex = 4
         '
         'dtpDateFrom
@@ -306,9 +324,10 @@ Partial Class uc_SearchBook
         Me.dtpDateFrom.Dock = System.Windows.Forms.DockStyle.Left
         Me.dtpDateFrom.Font = New System.Drawing.Font("Segoe UI Semilight", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpDateFrom.Location = New System.Drawing.Point(0, 0)
+        Me.dtpDateFrom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtpDateFrom.MinimumSize = New System.Drawing.Size(4, 35)
         Me.dtpDateFrom.Name = "dtpDateFrom"
-        Me.dtpDateFrom.Size = New System.Drawing.Size(180, 35)
+        Me.dtpDateFrom.Size = New System.Drawing.Size(239, 35)
         Me.dtpDateFrom.SkinColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(166, Byte), Integer), CType(CType(136, Byte), Integer))
         Me.dtpDateFrom.TabIndex = 4
         Me.dtpDateFrom.TextColor = System.Drawing.Color.Black
@@ -318,9 +337,10 @@ Partial Class uc_SearchBook
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(254, 12)
+        Me.Label5.Location = New System.Drawing.Point(339, 15)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 20)
+        Me.Label5.Size = New System.Drawing.Size(82, 25)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Date To:"
         '
@@ -329,9 +349,10 @@ Partial Class uc_SearchBook
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 12)
+        Me.Label2.Location = New System.Drawing.Point(45, 15)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 20)
+        Me.Label2.Size = New System.Drawing.Size(108, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Date From:"
         '
@@ -339,21 +360,23 @@ Partial Class uc_SearchBook
         '
         Me.filterBooks.AutoSize = True
         Me.filterBooks.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.filterBooks.Location = New System.Drawing.Point(22, 14)
+        Me.filterBooks.Location = New System.Drawing.Point(29, 17)
+        Me.filterBooks.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.filterBooks.Name = "filterBooks"
-        Me.filterBooks.Size = New System.Drawing.Size(112, 25)
+        Me.filterBooks.Size = New System.Drawing.Size(142, 32)
         Me.filterBooks.TabIndex = 0
         Me.filterBooks.Text = "Filter Books"
         '
         'uc_SearchBook
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Controls.Add(Me.VMpanel2)
         Me.Controls.Add(Me.VMpanel1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "uc_SearchBook"
-        Me.Size = New System.Drawing.Size(935, 600)
+        Me.Size = New System.Drawing.Size(1247, 738)
         Me.VMpanel1.ResumeLayout(False)
         Me.VMpanel1.PerformLayout()
         Me.VMpanel2.ResumeLayout(False)
