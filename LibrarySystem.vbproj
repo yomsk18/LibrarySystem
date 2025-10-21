@@ -189,6 +189,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Icons\book.png" />
+    <Content Include="Assets\Icons\bookPressed.png" />
     <Content Include="Assets\Icons\Capture.PNG" />
     <Content Include="Assets\Icons\chat.png" />
     <Content Include="Assets\Icons\Circle.png" />
@@ -199,8 +201,15 @@
     <Content Include="Assets\Icons\login.jpg" />
     <Content Include="Assets\Icons\login1.jpg" />
     <Content Include="Assets\Icons\logo.png" />
+    <Content Include="Assets\Icons\peso.png" />
+    <Content Include="Assets\Icons\pesoPressed.png" />
     <Content Include="Assets\Icons\profile.png" />
     <Content Include="Assets\Icons\question.png" />
+    <Content Include="Assets\Icons\searchPressed.png" />
+    <Content Include="Assets\Icons\userStudent.png" />
+    <Content Include="Assets\Icons\userStudentPressed.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\userStudent.png" />
     <None Include="Resources\error.bmp" />
   </ItemGroup>
   <ItemGroup />
