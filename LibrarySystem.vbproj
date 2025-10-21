@@ -126,6 +126,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Classes\RJMessageBox.vb" />
+    <Compile Include="UserContols\uc_SearchBook.Designer.vb">
+      <DependentUpon>uc_SearchBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserContols\uc_SearchBook.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="VergelControls\VMButton.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -171,6 +177,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserContols\uc_SearchBook.resx">
+      <DependentUpon>uc_SearchBook.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VergelControls\VMTextBox.resx">
       <DependentUpon>VMTextBox.vb</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +217,10 @@
     <Content Include="Assets\Icons\searchPressed.png" />
     <Content Include="Assets\Icons\userStudent.png" />
     <Content Include="Assets\Icons\userStudentPressed.png" />
+    <None Include="Resources\calendarDark.png" />
+    <None Include="Resources\calendarWhite.png" />
+    <None Include="Resources\accountPressed.png" />
+    <None Include="Resources\account.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\userStudent.png" />
     <None Include="Resources\error.bmp" />

@@ -15,7 +15,7 @@ Namespace VergelControls.VMControls
 
         '-> Other Values
         Private _droppedDown As Boolean = False
-        ' Private _calendarIcon As Image = My.Resources.Resources.calendarWhite
+        Private _calendarIcon As Image = My.Resources.Resources.calendarWhite
         Private _iconButtonArea As RectangleF
         Private Const calendarIconWidth As Integer = 34
         Private Const arrowIconWidth As Integer = 17
@@ -28,9 +28,9 @@ Namespace VergelControls.VMControls
             Set(value As Color)
                 _skinColor = value
                 If _skinColor.GetBrightness() >= 0.6F Then
-                    '_calendarIcon = My.Resources.Resources.calendarDark
+                    _calendarIcon = My.Resources.Resources.calendarDark
                 Else
-                    '_calendarIcon = My.Resources.Resources.calendarWhite
+                    _calendarIcon = My.Resources.Resources.calendarWhite
                 End If
                 Me.Invalidate()
             End Set
@@ -110,7 +110,7 @@ Namespace VergelControls.VMControls
                                     'Draw border 
                                     If _borderSize >= 1 Then graphics.DrawRectangle(penBorder, clientArea.X, clientArea.Y, clientArea.Width, clientArea.Height)
                                     'Draw icon
-                                    'graphics.DrawImage(_calendarIcon, Me.Width - _calendarIcon.Width - 9, (Me.Height - _calendarIcon.Height) / 2)
+                                    graphics.DrawImage(_calendarIcon, CSng(Me.Width - _calendarIcon.Width - 9), CSng((Me.Height - _calendarIcon.Height) / 2))
                                 End Using
                             End Using
                         End Using

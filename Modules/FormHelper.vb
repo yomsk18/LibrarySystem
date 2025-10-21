@@ -10,4 +10,10 @@
         currentForm.Hide()
     End Sub
 
+    Public Sub DefaultButton(pnl As Panel, lbl As Label, pb As PictureBox, pic As Image)
+        pnl.BackColor = Color.FromArgb(191, 166, 136)
+        lbl.ForeColor = Color.Black
+        pb.Image = pic
+    End Sub
+
 End Module
