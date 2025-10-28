@@ -81,11 +81,12 @@
         DefaultButton(pnlSearch, lblSearchBooks, pbSearch, My.Resources.search)
         DefaultButton(pnlFines, lblFines, pbFines, My.Resources.peso)
         DefaultButton(pnlAccount, lblFines, pbAccount, My.Resources.account)
+        LoadUserControl(New uc_Library())
     End Sub
 
     'View Fine panel events
     Private Sub pnlFines_MouseEnter(sender As Object, e As EventArgs) _
-Handles pnlFines.MouseEnter, lblFines.MouseEnter, lblFines.MouseEnter
+    Handles pnlFines.MouseEnter, lblFines.MouseEnter, lblFines.MouseEnter
         If isFinesSelected = True Then
             Return
         End If
@@ -113,7 +114,8 @@ Handles pnlFines.MouseEnter, lblFines.MouseEnter, lblFines.MouseEnter
         pbFines.Image = My.Resources.pesoPressed
         DefaultButton(pnlSearch, lblSearchBooks, pbSearch, My.Resources.search)
         DefaultButton(pnlLibrary, lblLibrary, pbLibrary, My.Resources.book)
-        DefaultButton(pnlAccount, lblFines, pbAccount, My.Resources.account)
+        DefaultButton(pnlAccount, lblAccount, pbAccount, My.Resources.account)
+        LoadUserControl(New uc_Fines())
     End Sub
     'account panel events
     Private Sub pnlAccount_MouseEnter(sender As Object, e As EventArgs) _
@@ -145,21 +147,5 @@ Handles pnlFines.MouseEnter, lblFines.MouseEnter, lblFines.MouseEnter
         DefaultButton(pnlSearch, lblSearchBooks, pbSearch, My.Resources.search)
         DefaultButton(pnlLibrary, lblLibrary, pbLibrary, My.Resources.book)
         DefaultButton(pnlFines, lblFines, pbFines, My.Resources.peso)
-    End Sub
-
-    Private Sub pnlFines_Click(sender As Object, e As EventArgs) Handles pnlFines.Click, pbFines.Click, lblFines.Click
-
-    End Sub
-
-    Private Sub pnlLibrary_Click(sender As Object, e As EventArgs) Handles pnlLibrary.Click, pbLibrary.Click, lblLibrary.Click
-
-    End Sub
-
-    Private Sub pnlSearch_Click(sender As Object, e As EventArgs) Handles pnlSearch.Click, pbSearch.Click, lblSearchBooks.Click
-
-    End Sub
-
-    Private Sub pnlAccount_Click(sender As Object, e As EventArgs) Handles pnlAccount.Click, pbAccount.Click, lblAccount.Click
-
     End Sub
 End Class

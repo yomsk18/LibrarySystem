@@ -28,7 +28,7 @@
             .DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
 
             ' Background
-            .BackgroundColor = Color.FromArgb(30, 30, 30)
+            .BackgroundColor = Color.FromArgb(191, 166, 136)
             .RowHeadersVisible = False
 
             ' Columns fit nicely
@@ -39,4 +39,31 @@
         End With
     End Sub
 
+    Private Sub btnBarrow_Click(sender As Object, e As EventArgs) Handles btnBarrow.Click
+        ' Check if any rows are selected
+        If dgvBooks.SelectedRows.Count > 0 Then
+            Dim message As String = "📚 Selected Books:" & vbCrLf & vbCrLf
+
+            ' Loop through each selected row
+            For Each row As DataGridViewRow In dgvBooks.SelectedRows
+                Dim title As String = row.Cells("TITLE").Value.ToString()
+                Dim author As String = row.Cells("AUTHOR").Value.ToString()
+                Dim category As String = row.Cells("CATEGORY").Value.ToString()
+                Dim isbn As String = row.Cells("ISBN").Value.ToString()
+                Dim stocks As String = row.Cells("STOCKS").Value.ToString()
+
+                message &= $"Title: {title}" & vbCrLf &
+                            $"Author: {author}" & vbCrLf &
+                            $"Category: {category}" & vbCrLf &
+                            $"ISBN: {isbn}" & vbCrLf &
+                            $"Stocks: {stocks}" & vbCrLf &
+                            "------------------------------" & vbCrLf
+            Next
+
+            ' Show message
+            RJMessageBox.Show(message, "Selected Books", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Else
+            RJMessageBox.Show("Please select at least one row.")
+        End If
+    End Sub
 End Class

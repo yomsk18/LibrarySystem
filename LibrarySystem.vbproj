@@ -79,10 +79,10 @@
     <Compile Include="Classes\C_Fines.vb" />
     <Compile Include="Classes\C_Transaction.vb" />
     <Compile Include="Classes\C_User.vb" />
-    <Compile Include="FrmStudent.Designer.vb">
+    <Compile Include="Forms\FrmStudent.Designer.vb">
       <DependentUpon>FrmStudent.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmStudent.vb">
+    <Compile Include="Forms\FrmStudent.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmStudentSignUp.Designer.vb">
@@ -192,7 +192,7 @@
     <EmbeddedResource Include="Forms\Landing.resx">
       <DependentUpon>Landing.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmStudent.resx">
+    <EmbeddedResource Include="Forms\FrmStudent.resx">
       <DependentUpon>FrmStudent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmStudentSignUp.resx">

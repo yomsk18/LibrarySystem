@@ -24,9 +24,12 @@ Partial Class FrmLibrarianLogin
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.pnlIcon = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.VmButton1 = New LibrarySystem.VergelControls.VMControls.VMButton()
         Me.btnLogin = New LibrarySystem.VergelControls.VMControls.VMButton()
@@ -35,15 +38,12 @@ Partial Class FrmLibrarianLogin
         Me.btnUserId = New LibrarySystem.RJTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.pnlIcon.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -51,17 +51,33 @@ Partial Class FrmLibrarianLogin
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.Panel1.Controls.Add(Me.pnlIcon)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1218, 118)
+        Me.Panel1.Size = New System.Drawing.Size(1624, 145)
         Me.Panel1.TabIndex = 0
         '
         'pnlIcon
         '
         Me.pnlIcon.Controls.Add(Me.PictureBox1)
-        Me.pnlIcon.Location = New System.Drawing.Point(736, -25)
+        Me.pnlIcon.Location = New System.Drawing.Point(981, -31)
+        Me.pnlIcon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.pnlIcon.Name = "pnlIcon"
-        Me.pnlIcon.Size = New System.Drawing.Size(438, 339)
+        Me.pnlIcon.Size = New System.Drawing.Size(584, 417)
         Me.pnlIcon.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.Circle
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(584, 417)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -72,18 +88,31 @@ Partial Class FrmLibrarianLogin
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(669, 600)
+        Me.Panel2.Size = New System.Drawing.Size(892, 738)
         Me.Panel2.TabIndex = 1
+        '
+        'Panel5
+        '
+        Me.Panel5.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.Capture
+        Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel5.Location = New System.Drawing.Point(0, 550)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(892, 188)
+        Me.Panel5.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.RosyBrown
-        Me.Label4.Location = New System.Drawing.Point(196, 414)
+        Me.Label4.Location = New System.Drawing.Point(261, 510)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(285, 30)
+        Me.Label4.Size = New System.Drawing.Size(366, 37)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "BOOK BARROWING SYSTEM"
         '
@@ -92,11 +121,22 @@ Partial Class FrmLibrarianLogin
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(206, 374)
+        Me.Label3.Location = New System.Drawing.Point(275, 460)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(250, 40)
+        Me.Label3.Size = New System.Drawing.Size(319, 50)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "LIBRARY LEDGER"
+        '
+        'Panel4
+        '
+        Me.Panel4.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.logo
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel4.Location = New System.Drawing.Point(289, 177)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(304, 268)
+        Me.Panel4.TabIndex = 0
         '
         'Panel3
         '
@@ -108,9 +148,10 @@ Partial Class FrmLibrarianLogin
         Me.Panel3.Controls.Add(Me.btnUserId)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(669, 0)
+        Me.Panel3.Location = New System.Drawing.Point(892, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(547, 600)
+        Me.Panel3.Size = New System.Drawing.Size(729, 738)
         Me.Panel3.TabIndex = 2
         '
         'VmButton1
@@ -124,9 +165,10 @@ Partial Class FrmLibrarianLogin
         Me.VmButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.VmButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VmButton1.ForeColor = System.Drawing.Color.White
-        Me.VmButton1.Location = New System.Drawing.Point(407, 541)
+        Me.VmButton1.Location = New System.Drawing.Point(543, 666)
+        Me.VmButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.VmButton1.Name = "VmButton1"
-        Me.VmButton1.Size = New System.Drawing.Size(130, 47)
+        Me.VmButton1.Size = New System.Drawing.Size(173, 58)
         Me.VmButton1.TabIndex = 5
         Me.VmButton1.Text = "BACK"
         Me.VmButton1.TextColor = System.Drawing.Color.White
@@ -143,9 +185,10 @@ Partial Class FrmLibrarianLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(151, 396)
+        Me.btnLogin.Location = New System.Drawing.Point(201, 487)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(250, 44)
+        Me.btnLogin.Size = New System.Drawing.Size(333, 54)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.Text = "LOGIN"
         Me.btnLogin.TextColor = System.Drawing.Color.White
@@ -156,9 +199,10 @@ Partial Class FrmLibrarianLogin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(212, 162)
+        Me.Label2.Location = New System.Drawing.Point(283, 199)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(118, 30)
+        Me.Label2.Size = New System.Drawing.Size(153, 37)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "LIBRARIAN"
         '
@@ -171,15 +215,15 @@ Partial Class FrmLibrarianLogin
         Me.btnPassword.BorderSize = 1
         Me.btnPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnPassword.Location = New System.Drawing.Point(151, 322)
-        Me.btnPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnPassword.Location = New System.Drawing.Point(201, 396)
+        Me.btnPassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnPassword.Multiline = False
         Me.btnPassword.Name = "btnPassword"
-        Me.btnPassword.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
-        Me.btnPassword.PasswordChar = False
+        Me.btnPassword.Padding = New System.Windows.Forms.Padding(13, 9, 13, 9)
+        Me.btnPassword.PasswordChar = True
         Me.btnPassword.PlaceholderColor = System.Drawing.Color.DimGray
         Me.btnPassword.PlaceholderText = "PASSWORD"
-        Me.btnPassword.Size = New System.Drawing.Size(250, 40)
+        Me.btnPassword.Size = New System.Drawing.Size(333, 51)
         Me.btnPassword.TabIndex = 2
         Me.btnPassword.Texts = ""
         Me.btnPassword.UnderlinedStyle = False
@@ -193,15 +237,15 @@ Partial Class FrmLibrarianLogin
         Me.btnUserId.BorderSize = 1
         Me.btnUserId.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUserId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.btnUserId.Location = New System.Drawing.Point(151, 274)
-        Me.btnUserId.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUserId.Location = New System.Drawing.Point(201, 337)
+        Me.btnUserId.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnUserId.Multiline = False
         Me.btnUserId.Name = "btnUserId"
-        Me.btnUserId.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
+        Me.btnUserId.Padding = New System.Windows.Forms.Padding(13, 9, 13, 9)
         Me.btnUserId.PasswordChar = False
         Me.btnUserId.PlaceholderColor = System.Drawing.Color.DimGray
         Me.btnUserId.PlaceholderText = "USER ID"
-        Me.btnUserId.Size = New System.Drawing.Size(250, 40)
+        Me.btnUserId.Size = New System.Drawing.Size(333, 51)
         Me.btnUserId.TabIndex = 1
         Me.btnUserId.Texts = ""
         Me.btnUserId.UnderlinedStyle = False
@@ -211,9 +255,10 @@ Partial Class FrmLibrarianLogin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(155, 227)
+        Me.Label1.Location = New System.Drawing.Point(207, 279)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(236, 30)
+        Me.Label1.Size = New System.Drawing.Size(302, 37)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Sign in to your account"
         '
@@ -222,68 +267,38 @@ Partial Class FrmLibrarianLogin
         Me.PictureBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(231, Byte), Integer))
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox2.Image = Global.LibrarySystem.My.Resources.Resources.profile
-        Me.PictureBox2.Location = New System.Drawing.Point(901, 88)
+        Me.PictureBox2.Location = New System.Drawing.Point(1201, 108)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(81, 71)
+        Me.PictureBox2.Size = New System.Drawing.Size(108, 87)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 0
         Me.PictureBox2.TabStop = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.Circle
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(438, 339)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Panel5
-        '
-        Me.Panel5.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.Capture
-        Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 447)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(669, 153)
-        Me.Panel5.TabIndex = 3
-        '
-        'Panel4
-        '
-        Me.Panel4.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.logo
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel4.Location = New System.Drawing.Point(217, 144)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(228, 218)
-        Me.Panel4.TabIndex = 0
-        '
         'FrmLibrarianLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1216, 600)
+        Me.ClientSize = New System.Drawing.Size(1621, 738)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximumSize = New System.Drawing.Size(1600, 900)
-        Me.MinimumSize = New System.Drawing.Size(1024, 600)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaximumSize = New System.Drawing.Size(2133, 1108)
+        Me.MinimumSize = New System.Drawing.Size(1365, 738)
         Me.Name = "FrmLibrarianLogin"
         Me.Text = "FrmLibrarianLogin"
         Me.Panel1.ResumeLayout(False)
         Me.pnlIcon.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

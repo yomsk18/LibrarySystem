@@ -17,6 +17,9 @@
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        If Not txtUserId.Texts = "student" And Not txtPassword.Texts = "password" Then
+            Return
+        End If
         SwitchForm(Me, New FrmStudent())
     End Sub
 End Class
