@@ -1,4 +1,10 @@
 ﻿Public Class FrmStudentLogin
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim g As Graphics = Me.CreateGraphics()
+        Dim dpiX As Single = g.DpiX
+        Dim dpiY As Single = g.DpiY
+        MessageBox.Show($"DPI X: {dpiX}, DPI Y: {dpiY}")
+    End Sub
     Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
         SwitchForm(Me, New Landing())
     End Sub

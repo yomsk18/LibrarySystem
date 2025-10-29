@@ -65,7 +65,7 @@ Partial Class FrmStudentLogin
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(913, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(732, 752)
         Me.Panel3.TabIndex = 6
@@ -100,7 +100,7 @@ Partial Class FrmStudentLogin
         Me.pnlForgetPass.AutoSize = True
         Me.pnlForgetPass.Controls.Add(Me.lblForgetPass)
         Me.pnlForgetPass.Location = New System.Drawing.Point(399, 454)
-        Me.pnlForgetPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlForgetPass.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlForgetPass.Name = "pnlForgetPass"
         Me.pnlForgetPass.Size = New System.Drawing.Size(169, 26)
         Me.pnlForgetPass.TabIndex = 7
@@ -118,6 +118,7 @@ Partial Class FrmStudentLogin
         '
         'VmButton1
         '
+        Me.VmButton1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.VmButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.VmButton1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(103, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.VmButton1.BorderColor = System.Drawing.Color.PaleVioletRed
@@ -128,7 +129,7 @@ Partial Class FrmStudentLogin
         Me.VmButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VmButton1.ForeColor = System.Drawing.Color.White
         Me.VmButton1.Location = New System.Drawing.Point(543, 666)
-        Me.VmButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.VmButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.VmButton1.Name = "VmButton1"
         Me.VmButton1.Size = New System.Drawing.Size(173, 58)
         Me.VmButton1.TabIndex = 5
@@ -148,7 +149,7 @@ Partial Class FrmStudentLogin
         Me.btnLogin.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.Location = New System.Drawing.Point(167, 487)
-        Me.btnLogin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(401, 54)
         Me.btnLogin.TabIndex = 4
@@ -178,7 +179,7 @@ Partial Class FrmStudentLogin
         Me.txtPassword.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtPassword.Location = New System.Drawing.Point(167, 396)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(5)
         Me.txtPassword.Multiline = False
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Padding = New System.Windows.Forms.Padding(13, 9, 13, 9)
@@ -200,7 +201,7 @@ Partial Class FrmStudentLogin
         Me.txtUserId.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUserId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.txtUserId.Location = New System.Drawing.Point(167, 337)
-        Me.txtUserId.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtUserId.Margin = New System.Windows.Forms.Padding(5)
         Me.txtUserId.Multiline = False
         Me.txtUserId.Name = "txtUserId"
         Me.txtUserId.Padding = New System.Windows.Forms.Padding(13, 9, 13, 9)
@@ -230,7 +231,7 @@ Partial Class FrmStudentLogin
         Me.Panel2.Controls.Add(Me.Panel6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(913, 752)
         Me.Panel2.TabIndex = 5
@@ -241,7 +242,7 @@ Partial Class FrmStudentLogin
         Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(913, 752)
         Me.Panel6.TabIndex = 4
@@ -252,7 +253,7 @@ Partial Class FrmStudentLogin
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.PictureBox2.Image = Global.LibrarySystem.My.Resources.Resources.profile
         Me.PictureBox2.Location = New System.Drawing.Point(1201, 108)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(108, 87)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -276,7 +277,7 @@ Partial Class FrmStudentLogin
         Me.Panel4.BackgroundImage = Global.LibrarySystem.My.Resources.Resources.logo
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel4.Location = New System.Drawing.Point(16, 4)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(180, 128)
         Me.Panel4.TabIndex = 0
@@ -289,15 +290,15 @@ Partial Class FrmStudentLogin
         Me.Label4.Location = New System.Drawing.Point(225, 78)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(366, 37)
+        Me.Label4.Size = New System.Drawing.Size(368, 37)
         Me.Label4.TabIndex = 2
-        Me.Label4.Text = "BOOK BARROWING SYSTEM"
+        Me.Label4.Text = "BOOK BORROWING SYSTEM"
         '
         'pnlIcon
         '
         Me.pnlIcon.Controls.Add(Me.PictureBox1)
         Me.pnlIcon.Location = New System.Drawing.Point(981, -31)
-        Me.pnlIcon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pnlIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.pnlIcon.Name = "pnlIcon"
         Me.pnlIcon.Size = New System.Drawing.Size(584, 417)
         Me.pnlIcon.TabIndex = 0
@@ -309,7 +310,7 @@ Partial Class FrmStudentLogin
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Image = Global.LibrarySystem.My.Resources.Resources.Circle
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(584, 417)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -324,7 +325,7 @@ Partial Class FrmStudentLogin
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1645, 145)
         Me.Panel1.TabIndex = 4
@@ -339,10 +340,11 @@ Partial Class FrmStudentLogin
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximumSize = New System.Drawing.Size(2133, 1108)
         Me.MinimumSize = New System.Drawing.Size(1365, 738)
         Me.Name = "FrmStudentLogin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FrmStudentLogin"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()

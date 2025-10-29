@@ -6,6 +6,7 @@
         dgvBooks.Rows.Add("Atomic Habits", "James Clear", "Self-Help", "9780735211292", "10")
         dgvBooks.Rows.Add("The Hobbit", "J.R.R. Tolkien", "Fantasy", "9780547928227", "7")
 
+
         With dgvBooks
             ' Remove borders and grid lines
             .BorderStyle = BorderStyle.None

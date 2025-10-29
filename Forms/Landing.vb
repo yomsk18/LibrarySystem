@@ -10,8 +10,4 @@
     Private Sub VmButton1_Click(sender As Object, e As EventArgs) Handles VmButton1.Click
         SwitchForm(Me, New FrmStudentLogin())
     End Sub
-
-    Private Sub VmButton2_Click(sender As Object, e As EventArgs)
-
-    End Sub
 End Class
